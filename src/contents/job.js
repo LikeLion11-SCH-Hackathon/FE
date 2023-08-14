@@ -5,7 +5,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 
   const formData = new FormData(event.target); // 폼 데이터 가져오기
 
-  axios.post('http://118.67.134.90:18080/', formData)
+  axios.post('http:', formData)
     .then(response => {
       console.log('Data submitted:', response.data);
       // 서버 응답에 대한 처리
@@ -16,7 +16,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     });
 });
 
-axios.get('http://118.67.134.90:18080/')
+axios.get('http:')
   .then(response => {
     const dataElement = document.getElementById('data-container');
     dataElement.textContent = response.data;
